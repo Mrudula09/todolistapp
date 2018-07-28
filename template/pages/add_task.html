@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% include 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add card</title>
+</head>
+<body>
+    <br/>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group" align="center" style="padding:60px;">
+            <input type="text" class="form-control" name="title" placeholder="Title...."/><br/>
+            <input type="text" class="form-control" name="description" placeholder="Type description...."/><br/>
+            <input type="text" class="form-control" name="type"  placeholder="Type...."><br/>
+            <input type="date" class="form-control" name="deadline" value="{{ task.deadline|date:"Y-m-d" }}" placeholder="Deadline...."><br/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

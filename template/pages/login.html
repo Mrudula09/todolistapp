@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% include 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group" align="center" style="padding:60px;">
+            <input type="text" class="form-control" name="username" placeholder="Username"/><br/>
+            <input type="password" class="form-control" name="password" placeholder="Password"/><br/>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+     </form>
+</body>
+</html>
