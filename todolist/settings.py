@@ -25,7 +25,7 @@ SECRET_KEY = 'd*_sv_js__&k+^cinb@xczs9zs1^mi&2^%#vnf^btk584@-myf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'todolistapp99.herokuapp.com' ,'127.0.0.1']
 
 
 # Application definition
